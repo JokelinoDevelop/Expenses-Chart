@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="balance">
+        <div class="text">
+          <p>My balance</p>
+          <h1>$921.48</h1>
+        </div>
+
+        <div class="image">
+          <img src="images/logo.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="bars">
+        <h1 class="last-seven-days">Spending - Last 7 days</h1>
+
+        <ul class="chart">
+          <li>
+            <div class="price">52$</div>
+            <div class="bar" id="mon"></div>
+            <p>mon</p>
+          </li>
+          <li>
+            <div class="price">52$</div>
+            <div class="bar" id="tue"></div>
+            <p>tue</p>
+          </li>
+          <li>
+            <div class="price">52$</div>
+            <div class="bar" id="wed"></div>
+            <p>wed</p>
+          </li>
+          <li>
+            <div class="price">52$</div>
+            <div class="bar" id="thu"></div>
+            <p>thu</p>
+          </li>
+          <li>
+            <div class="price">52$</div>
+            <div class="bar" id="fri"></div>
+            <p>fri</p>
+          </li>
+          <li>
+            <div class="price">52$</div>
+            <div class="bar" id="sat"></div>
+            <p>sat</p>
+          </li>
+          <li>
+            <div class="price" id="price">52$</div>
+            <div class="bar" id="sun"></div>
+            <p>sun</p>
+          </li>
+        </ul>
+
+        <hr />
+
+        <div class="total">
+          <p>Total this month</p>
+
+          <div class="total-flex">
+            <h1>$478.33</h1>
+
+            <div class="last-month">
+              <h4>+2.4%</h4>
+              <p>from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
+<!--
+  
+  
+
+  
+    -->

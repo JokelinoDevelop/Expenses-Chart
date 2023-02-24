@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    margin: 0 1rem;
+}
+
+@media(max-width: 550px){
+    .container{
+        width: 330px;
+    }
+}
+
+/* Balance */
+
+.container .balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: var(--soft-red);
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+.container .balance .text p{
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Bars */
+
+.container .bars{
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container .bars h1{
+   color: var(--dark-brown); 
+   font-size: 1.8rem;
+}
+
+.container .bars .last-seven-days{
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 550px){
+    .container .bars .last-seven-days{
+        font-size: 1.5rem;
+    }
+}
+
+.container .bars ul{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.container .bars ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .bars ul li .price{
+    opacity: 0;
+    width: 50px;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--dark-brown);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+@media(max-width: 550px){
+    .container .bars ul li .price{
+        width: 35px;
+        padding: 0.7rem 0;
+        font-size: 0.6rem;
+    }
+}
+
+.container .bars ul li p{
+    text-align: center;
+    margin-top: 0.5rem;
+    opacity: 0.6;
+}
+
+.container .bars hr{
+    margin: 2rem 0;
+    opacity: 0.2;
+}
+
+.container .bars .total .total-flex{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .bars .total p{
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.container .bars .total .total-flex .last-month h4{
+    font-size: 1.2rem;
+    text-align: right;
+    color: var(--dark-brown);
+}
+
+
+/* Utility */
+
+.bar{
+    width: 2.5rem;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+}
+
+@media (max-width: 550px){
+    .bar{
+        width: 1.5rem;
+    }
+}
+
+.bar:hover{
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in;
+}
